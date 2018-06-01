@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.welcomeLbl = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.playBtn = new System.Windows.Forms.Button();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // welcomeLbl
@@ -42,25 +43,39 @@
             this.welcomeLbl.TabIndex = 0;
             this.welcomeLbl.Text = "¡Bienvenido al Ahorcado Web!";
             // 
-            // button1
+            // playBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Font = new System.Drawing.Font("Source Sans Pro Semibold", 22F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(737, 461);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 82);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Jugar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.playBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.playBtn.Enabled = false;
+            this.playBtn.Font = new System.Drawing.Font("Source Sans Pro Semibold", 22F, System.Drawing.FontStyle.Bold);
+            this.playBtn.Location = new System.Drawing.Point(737, 548);
+            this.playBtn.Name = "playBtn";
+            this.playBtn.Size = new System.Drawing.Size(256, 83);
+            this.playBtn.TabIndex = 1;
+            this.playBtn.Text = "Jugar";
+            this.playBtn.UseVisualStyleBackColor = false;
+            this.playBtn.Click += new System.EventHandler(this.playBtn_Click);
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.Font = new System.Drawing.Font("Source Sans Pro", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameTextBox.Location = new System.Drawing.Point(668, 477);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(395, 48);
+            this.nameTextBox.TabIndex = 2;
+            this.nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1731, 882);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.playBtn);
             this.Controls.Add(this.welcomeLbl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "WelcomeForm";
             this.Text = "Juego Ahorcado";
             this.ResumeLayout(false);
@@ -71,7 +86,8 @@
         #endregion
 
         private System.Windows.Forms.Label welcomeLbl;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button playBtn;
+        private System.Windows.Forms.TextBox nameTextBox;
     }
 }
 

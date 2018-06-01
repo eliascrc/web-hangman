@@ -16,13 +16,18 @@ namespace hangman
         public WelcomeForm()
         {
             InitializeComponent();
+            this.AcceptButton = playBtn;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void playBtn_Click(object sender, EventArgs e)
         {
-            (new GameForm()).Show();
+            (new GameForm(this.nameTextBox.Text)).Show();
             Hide();
         }
 
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            playBtn.Enabled = nameTextBox.Text.Length > 0;
+        }
     }
 }

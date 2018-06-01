@@ -13,12 +13,15 @@ namespace hangman
     public partial class GameForm : Form
     {
 
-        public GameForm()
+        private int tries;
+        private PictureBox[] pictures;
+
+        public GameForm(String playerName)
         {
             InitializeComponent();
-            Bitmap headBitmap = new Bitmap(headPicBox.Image);
-            headBitmap.MakeTransparent(System.Drawing.Color.White);
-            headPicBox.Image = headBitmap;
+            this.playerLbl.Text = this.playerLbl.Text + "  " + playerName;
+            this.tries = 0;
+            this.pictures = new PictureBox[] { headPicBox, bodyPicBox, arm1PicBox, arm2PicBox, leg1PicBox, leg2PicBox };
         }
 
         private void GameForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -26,34 +29,21 @@ namespace hangman
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LetterButton_Click(object sender, EventArgs e)
         {
-            headPicBox.Visible = true;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            arm1PicBox.Visible = true;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            arm2PicBox.Visible = true;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            bodyPicBox.Visible = true;
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            leg1PicBox.Visible = true;
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            leg2PicBox.Visible = true;
+            if (this.tries < 6)
+            {
+                this.pictures[this.tries].Visible = true;
+                this.tries++;
+                ((Button)sender).Enabled = false;
+            }
+            else if (this.tries == 6)
+            {
+                this.headPicBox.Visible = false;
+                this.deadHeadPicBox.Visible = true;
+                this.tries++;
+                ((Button)sender).Enabled = false;
+            }
         }
     }
 }
