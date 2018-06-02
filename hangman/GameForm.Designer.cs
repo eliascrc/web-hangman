@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ABtn = new System.Windows.Forms.Button();
             this.BBtn = new System.Windows.Forms.Button();
             this.CBtn = new System.Windows.Forms.Button();
@@ -58,7 +59,7 @@
             this.wordTextBox = new System.Windows.Forms.TextBox();
             this.wordTitleLbl = new System.Windows.Forms.Label();
             this.timeLbl = new System.Windows.Forms.Label();
-            this.triesLbl = new System.Windows.Forms.Label();
+            this.remAttemptsLbl = new System.Windows.Forms.Label();
             this.playerLbl = new System.Windows.Forms.Label();
             this.deadHeadPicBox = new System.Windows.Forms.PictureBox();
             this.leg2PicBox = new System.Windows.Forms.PictureBox();
@@ -69,6 +70,8 @@
             this.headPicBox = new System.Windows.Forms.PictureBox();
             this.polePicBox = new System.Windows.Forms.PictureBox();
             this.NyBtn = new System.Windows.Forms.Button();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.timerLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deadHeadPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leg2PicBox)).BeginInit();
@@ -369,10 +372,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.timerLbl);
             this.panel1.Controls.Add(this.wordTextBox);
             this.panel1.Controls.Add(this.wordTitleLbl);
             this.panel1.Controls.Add(this.timeLbl);
-            this.panel1.Controls.Add(this.triesLbl);
+            this.panel1.Controls.Add(this.remAttemptsLbl);
             this.panel1.Controls.Add(this.playerLbl);
             this.panel1.Controls.Add(this.deadHeadPicBox);
             this.panel1.Controls.Add(this.leg2PicBox);
@@ -420,16 +424,16 @@
             this.timeLbl.TabIndex = 10;
             this.timeLbl.Text = "Tiempo:";
             // 
-            // triesLbl
+            // remAttemptsLbl
             // 
-            this.triesLbl.AutoSize = true;
-            this.triesLbl.Font = new System.Drawing.Font("Source Sans Pro", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.triesLbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.triesLbl.Location = new System.Drawing.Point(1110, 170);
-            this.triesLbl.Name = "triesLbl";
-            this.triesLbl.Size = new System.Drawing.Size(238, 70);
-            this.triesLbl.TabIndex = 9;
-            this.triesLbl.Text = "Intentos:";
+            this.remAttemptsLbl.AutoSize = true;
+            this.remAttemptsLbl.Font = new System.Drawing.Font("Source Sans Pro", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remAttemptsLbl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.remAttemptsLbl.Location = new System.Drawing.Point(1110, 170);
+            this.remAttemptsLbl.Name = "remAttemptsLbl";
+            this.remAttemptsLbl.Size = new System.Drawing.Size(518, 70);
+            this.remAttemptsLbl.TabIndex = 9;
+            this.remAttemptsLbl.Text = "Le quedan X intentos";
             // 
             // playerLbl
             // 
@@ -547,6 +551,22 @@
             this.NyBtn.UseVisualStyleBackColor = true;
             this.NyBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
+            // gameTimer
+            // 
+            this.gameTimer.Interval = 1000;
+            this.gameTimer.Tick += new System.EventHandler(this.secondEllapsed);
+            // 
+            // timerLbl
+            // 
+            this.timerLbl.AutoSize = true;
+            this.timerLbl.Font = new System.Drawing.Font("Source Sans Pro", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timerLbl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.timerLbl.Location = new System.Drawing.Point(1329, 256);
+            this.timerLbl.Name = "timerLbl";
+            this.timerLbl.Size = new System.Drawing.Size(156, 70);
+            this.timerLbl.TabIndex = 13;
+            this.timerLbl.Text = "00:00";
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -585,6 +605,7 @@
             this.Name = "GameForm";
             this.Text = "Juego Ahorcado";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameForm_FormClosed);
+            this.Load += new System.EventHandler(this.GameForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deadHeadPicBox)).EndInit();
@@ -639,8 +660,10 @@
         private System.Windows.Forms.PictureBox deadHeadPicBox;
         private System.Windows.Forms.Label wordTitleLbl;
         private System.Windows.Forms.Label timeLbl;
-        private System.Windows.Forms.Label triesLbl;
+        private System.Windows.Forms.Label remAttemptsLbl;
         private System.Windows.Forms.Label playerLbl;
         private System.Windows.Forms.TextBox wordTextBox;
+        private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Label timerLbl;
     }
 }
