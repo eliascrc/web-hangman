@@ -32,15 +32,17 @@
             this.playBtn = new System.Windows.Forms.Button();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.highscoresBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // welcomeLbl
             // 
             this.welcomeLbl.AutoSize = true;
             this.welcomeLbl.Font = new System.Drawing.Font("Source Sans Pro", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLbl.Location = new System.Drawing.Point(355, 328);
+            this.welcomeLbl.Location = new System.Drawing.Point(237, 168);
+            this.welcomeLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.welcomeLbl.Name = "welcomeLbl";
-            this.welcomeLbl.Size = new System.Drawing.Size(1043, 101);
+            this.welcomeLbl.Size = new System.Drawing.Size(705, 68);
             this.welcomeLbl.TabIndex = 0;
             this.welcomeLbl.Text = "¡Bienvenido al Ahorcado Web!";
             // 
@@ -49,9 +51,10 @@
             this.playBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.playBtn.Enabled = false;
             this.playBtn.Font = new System.Drawing.Font("Source Sans Pro Semibold", 22F, System.Drawing.FontStyle.Bold);
-            this.playBtn.Location = new System.Drawing.Point(737, 610);
+            this.playBtn.Location = new System.Drawing.Point(491, 351);
+            this.playBtn.Margin = new System.Windows.Forms.Padding(2);
             this.playBtn.Name = "playBtn";
-            this.playBtn.Size = new System.Drawing.Size(256, 83);
+            this.playBtn.Size = new System.Drawing.Size(171, 54);
             this.playBtn.TabIndex = 1;
             this.playBtn.Text = "Jugar";
             this.playBtn.UseVisualStyleBackColor = false;
@@ -60,9 +63,10 @@
             // nameTextBox
             // 
             this.nameTextBox.Font = new System.Drawing.Font("Source Sans Pro", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameTextBox.Location = new System.Drawing.Point(668, 540);
+            this.nameTextBox.Location = new System.Drawing.Point(445, 306);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(395, 48);
+            this.nameTextBox.Size = new System.Drawing.Size(265, 34);
             this.nameTextBox.TabIndex = 2;
             this.nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
@@ -71,24 +75,42 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Source Sans Pro", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(678, 468);
+            this.label1.Location = new System.Drawing.Point(452, 259);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(375, 55);
+            this.label1.Size = new System.Drawing.Size(256, 38);
             this.label1.TabIndex = 3;
             this.label1.Text = "Ingrese su nombre:";
             // 
+            // highscoresBtn
+            // 
+            this.highscoresBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.highscoresBtn.Font = new System.Drawing.Font("Source Sans Pro Semibold", 22F, System.Drawing.FontStyle.Bold);
+            this.highscoresBtn.Location = new System.Drawing.Point(929, 508);
+            this.highscoresBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.highscoresBtn.Name = "highscoresBtn";
+            this.highscoresBtn.Size = new System.Drawing.Size(214, 54);
+            this.highscoresBtn.TabIndex = 4;
+            this.highscoresBtn.Text = "Highscores";
+            this.highscoresBtn.UseVisualStyleBackColor = false;
+            this.highscoresBtn.Click += new System.EventHandler(this.highscores_Click);
+            // 
             // WelcomeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1731, 882);
+            this.ClientSize = new System.Drawing.Size(1154, 573);
+            this.Controls.Add(this.highscoresBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.playBtn);
             this.Controls.Add(this.welcomeLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1170, 612);
             this.Name = "WelcomeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Juego Ahorcado";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,6 +123,7 @@
         private System.Windows.Forms.Button playBtn;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button highscoresBtn;
     }
 }
 

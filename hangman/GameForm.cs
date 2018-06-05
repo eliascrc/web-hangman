@@ -47,7 +47,6 @@ namespace hangman
                 {
                     this.headPicBox.Visible = false;
                     this.deadHeadPicBox.Visible = true;
-                    this.gameTimer.Stop();
                 }
                 this.misses++;
                 this.remainingAttempts--;
@@ -56,22 +55,5 @@ namespace hangman
             }
         }
 
-        private void secondEllapsed(object sender, EventArgs e)
-        {
-            this.seconds++;
-            if (this.seconds >= 60)
-            {
-                this.minutes++;
-                this.seconds = 0;
-            }
-
-            this.timerLbl.Text = ((this.minutes < 10) ? "0" : "") + this.minutes.ToString() + ":" 
-                + ((this.seconds < 10) ? "0" : "") + this.seconds.ToString();
-        }
-
-        private void GameForm_Load(object sender, EventArgs e)
-        {
-            this.gameTimer.Start();
-        }
     }
 }
