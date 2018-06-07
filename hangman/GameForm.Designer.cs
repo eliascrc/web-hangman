@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             this.ABtn = new System.Windows.Forms.Button();
             this.BBtn = new System.Windows.Forms.Button();
             this.CBtn = new System.Windows.Forms.Button();
@@ -55,11 +56,11 @@
             this.YBtn = new System.Windows.Forms.Button();
             this.ZBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.backBtn = new System.Windows.Forms.Button();
             this.wordTextBox = new System.Windows.Forms.TextBox();
             this.wordTitleLbl = new System.Windows.Forms.Label();
             this.remAttemptsLbl = new System.Windows.Forms.Label();
             this.playerLbl = new System.Windows.Forms.Label();
-            this.NyBtn = new System.Windows.Forms.Button();
             this.deadHeadPicBox = new System.Windows.Forms.PictureBox();
             this.leg2PicBox = new System.Windows.Forms.PictureBox();
             this.leg1PicBox = new System.Windows.Forms.PictureBox();
@@ -81,8 +82,8 @@
             // 
             // ABtn
             // 
-            this.ABtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ABtn.Location = new System.Drawing.Point(8, 553);
+            this.ABtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ABtn.Location = new System.Drawing.Point(53, 552);
             this.ABtn.Margin = new System.Windows.Forms.Padding(2);
             this.ABtn.Name = "ABtn";
             this.ABtn.Size = new System.Drawing.Size(90, 64);
@@ -93,8 +94,8 @@
             // 
             // BBtn
             // 
-            this.BBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BBtn.Location = new System.Drawing.Point(102, 553);
+            this.BBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BBtn.Location = new System.Drawing.Point(147, 552);
             this.BBtn.Margin = new System.Windows.Forms.Padding(2);
             this.BBtn.Name = "BBtn";
             this.BBtn.Size = new System.Drawing.Size(90, 64);
@@ -105,8 +106,8 @@
             // 
             // CBtn
             // 
-            this.CBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBtn.Location = new System.Drawing.Point(196, 553);
+            this.CBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBtn.Location = new System.Drawing.Point(241, 552);
             this.CBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CBtn.Name = "CBtn";
             this.CBtn.Size = new System.Drawing.Size(90, 64);
@@ -117,8 +118,8 @@
             // 
             // DBtn
             // 
-            this.DBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DBtn.Location = new System.Drawing.Point(290, 553);
+            this.DBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DBtn.Location = new System.Drawing.Point(335, 552);
             this.DBtn.Margin = new System.Windows.Forms.Padding(2);
             this.DBtn.Name = "DBtn";
             this.DBtn.Size = new System.Drawing.Size(90, 64);
@@ -129,8 +130,8 @@
             // 
             // EBtn
             // 
-            this.EBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EBtn.Location = new System.Drawing.Point(384, 553);
+            this.EBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EBtn.Location = new System.Drawing.Point(429, 552);
             this.EBtn.Margin = new System.Windows.Forms.Padding(2);
             this.EBtn.Name = "EBtn";
             this.EBtn.Size = new System.Drawing.Size(90, 64);
@@ -141,8 +142,8 @@
             // 
             // FBtn
             // 
-            this.FBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FBtn.Location = new System.Drawing.Point(478, 553);
+            this.FBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FBtn.Location = new System.Drawing.Point(523, 552);
             this.FBtn.Margin = new System.Windows.Forms.Padding(2);
             this.FBtn.Name = "FBtn";
             this.FBtn.Size = new System.Drawing.Size(90, 64);
@@ -153,8 +154,8 @@
             // 
             // GBtn
             // 
-            this.GBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBtn.Location = new System.Drawing.Point(572, 553);
+            this.GBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GBtn.Location = new System.Drawing.Point(617, 552);
             this.GBtn.Margin = new System.Windows.Forms.Padding(2);
             this.GBtn.Name = "GBtn";
             this.GBtn.Size = new System.Drawing.Size(90, 64);
@@ -165,8 +166,8 @@
             // 
             // HBtn
             // 
-            this.HBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HBtn.Location = new System.Drawing.Point(666, 553);
+            this.HBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HBtn.Location = new System.Drawing.Point(711, 552);
             this.HBtn.Margin = new System.Windows.Forms.Padding(2);
             this.HBtn.Name = "HBtn";
             this.HBtn.Size = new System.Drawing.Size(90, 64);
@@ -177,8 +178,8 @@
             // 
             // IBtn
             // 
-            this.IBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IBtn.Location = new System.Drawing.Point(760, 553);
+            this.IBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IBtn.Location = new System.Drawing.Point(805, 552);
             this.IBtn.Margin = new System.Windows.Forms.Padding(2);
             this.IBtn.Name = "IBtn";
             this.IBtn.Size = new System.Drawing.Size(90, 64);
@@ -189,8 +190,8 @@
             // 
             // JBtn
             // 
-            this.JBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JBtn.Location = new System.Drawing.Point(854, 553);
+            this.JBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JBtn.Location = new System.Drawing.Point(899, 552);
             this.JBtn.Margin = new System.Windows.Forms.Padding(2);
             this.JBtn.Name = "JBtn";
             this.JBtn.Size = new System.Drawing.Size(90, 64);
@@ -201,8 +202,8 @@
             // 
             // KBtn
             // 
-            this.KBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KBtn.Location = new System.Drawing.Point(948, 553);
+            this.KBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KBtn.Location = new System.Drawing.Point(993, 552);
             this.KBtn.Margin = new System.Windows.Forms.Padding(2);
             this.KBtn.Name = "KBtn";
             this.KBtn.Size = new System.Drawing.Size(90, 64);
@@ -213,8 +214,8 @@
             // 
             // LBtn
             // 
-            this.LBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBtn.Location = new System.Drawing.Point(1042, 553);
+            this.LBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBtn.Location = new System.Drawing.Point(1087, 552);
             this.LBtn.Margin = new System.Windows.Forms.Padding(2);
             this.LBtn.Name = "LBtn";
             this.LBtn.Size = new System.Drawing.Size(90, 64);
@@ -225,8 +226,8 @@
             // 
             // MBtn
             // 
-            this.MBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MBtn.Location = new System.Drawing.Point(1136, 553);
+            this.MBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MBtn.Location = new System.Drawing.Point(1181, 552);
             this.MBtn.Margin = new System.Windows.Forms.Padding(2);
             this.MBtn.Name = "MBtn";
             this.MBtn.Size = new System.Drawing.Size(90, 64);
@@ -237,8 +238,8 @@
             // 
             // NBtn
             // 
-            this.NBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NBtn.Location = new System.Drawing.Point(1230, 553);
+            this.NBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NBtn.Location = new System.Drawing.Point(53, 620);
             this.NBtn.Margin = new System.Windows.Forms.Padding(2);
             this.NBtn.Name = "NBtn";
             this.NBtn.Size = new System.Drawing.Size(90, 64);
@@ -249,8 +250,8 @@
             // 
             // OBtn
             // 
-            this.OBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OBtn.Location = new System.Drawing.Point(148, 621);
+            this.OBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OBtn.Location = new System.Drawing.Point(147, 620);
             this.OBtn.Margin = new System.Windows.Forms.Padding(2);
             this.OBtn.Name = "OBtn";
             this.OBtn.Size = new System.Drawing.Size(90, 64);
@@ -261,8 +262,8 @@
             // 
             // PBtn
             // 
-            this.PBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PBtn.Location = new System.Drawing.Point(242, 621);
+            this.PBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PBtn.Location = new System.Drawing.Point(241, 620);
             this.PBtn.Margin = new System.Windows.Forms.Padding(2);
             this.PBtn.Name = "PBtn";
             this.PBtn.Size = new System.Drawing.Size(90, 64);
@@ -273,8 +274,8 @@
             // 
             // QBtn
             // 
-            this.QBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QBtn.Location = new System.Drawing.Point(336, 621);
+            this.QBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QBtn.Location = new System.Drawing.Point(335, 620);
             this.QBtn.Margin = new System.Windows.Forms.Padding(2);
             this.QBtn.Name = "QBtn";
             this.QBtn.Size = new System.Drawing.Size(90, 64);
@@ -285,8 +286,8 @@
             // 
             // RBtn
             // 
-            this.RBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn.Location = new System.Drawing.Point(430, 621);
+            this.RBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RBtn.Location = new System.Drawing.Point(429, 620);
             this.RBtn.Margin = new System.Windows.Forms.Padding(2);
             this.RBtn.Name = "RBtn";
             this.RBtn.Size = new System.Drawing.Size(90, 64);
@@ -297,8 +298,8 @@
             // 
             // SBtn
             // 
-            this.SBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SBtn.Location = new System.Drawing.Point(524, 621);
+            this.SBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SBtn.Location = new System.Drawing.Point(523, 620);
             this.SBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SBtn.Name = "SBtn";
             this.SBtn.Size = new System.Drawing.Size(90, 64);
@@ -309,8 +310,8 @@
             // 
             // TBtn
             // 
-            this.TBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBtn.Location = new System.Drawing.Point(618, 621);
+            this.TBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBtn.Location = new System.Drawing.Point(617, 620);
             this.TBtn.Margin = new System.Windows.Forms.Padding(2);
             this.TBtn.Name = "TBtn";
             this.TBtn.Size = new System.Drawing.Size(90, 64);
@@ -321,8 +322,8 @@
             // 
             // UBtn
             // 
-            this.UBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UBtn.Location = new System.Drawing.Point(712, 621);
+            this.UBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UBtn.Location = new System.Drawing.Point(711, 620);
             this.UBtn.Margin = new System.Windows.Forms.Padding(2);
             this.UBtn.Name = "UBtn";
             this.UBtn.Size = new System.Drawing.Size(90, 64);
@@ -333,8 +334,8 @@
             // 
             // VBtn
             // 
-            this.VBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VBtn.Location = new System.Drawing.Point(806, 621);
+            this.VBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VBtn.Location = new System.Drawing.Point(805, 620);
             this.VBtn.Margin = new System.Windows.Forms.Padding(2);
             this.VBtn.Name = "VBtn";
             this.VBtn.Size = new System.Drawing.Size(90, 64);
@@ -345,8 +346,8 @@
             // 
             // WBtn
             // 
-            this.WBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WBtn.Location = new System.Drawing.Point(900, 621);
+            this.WBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WBtn.Location = new System.Drawing.Point(899, 620);
             this.WBtn.Margin = new System.Windows.Forms.Padding(2);
             this.WBtn.Name = "WBtn";
             this.WBtn.Size = new System.Drawing.Size(90, 64);
@@ -357,8 +358,8 @@
             // 
             // XBtn
             // 
-            this.XBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XBtn.Location = new System.Drawing.Point(994, 621);
+            this.XBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XBtn.Location = new System.Drawing.Point(993, 620);
             this.XBtn.Margin = new System.Windows.Forms.Padding(2);
             this.XBtn.Name = "XBtn";
             this.XBtn.Size = new System.Drawing.Size(90, 64);
@@ -369,8 +370,8 @@
             // 
             // YBtn
             // 
-            this.YBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YBtn.Location = new System.Drawing.Point(1088, 621);
+            this.YBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YBtn.Location = new System.Drawing.Point(1087, 620);
             this.YBtn.Margin = new System.Windows.Forms.Padding(2);
             this.YBtn.Name = "YBtn";
             this.YBtn.Size = new System.Drawing.Size(90, 64);
@@ -381,8 +382,8 @@
             // 
             // ZBtn
             // 
-            this.ZBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ZBtn.Location = new System.Drawing.Point(1182, 621);
+            this.ZBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZBtn.Location = new System.Drawing.Point(1181, 620);
             this.ZBtn.Margin = new System.Windows.Forms.Padding(2);
             this.ZBtn.Name = "ZBtn";
             this.ZBtn.Size = new System.Drawing.Size(90, 64);
@@ -394,6 +395,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.backBtn);
             this.panel1.Controls.Add(this.wordTextBox);
             this.panel1.Controls.Add(this.wordTitleLbl);
             this.panel1.Controls.Add(this.remAttemptsLbl);
@@ -412,65 +414,66 @@
             this.panel1.Size = new System.Drawing.Size(1305, 519);
             this.panel1.TabIndex = 26;
             // 
+            // backBtn
+            // 
+            this.backBtn.Enabled = false;
+            this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.Location = new System.Drawing.Point(605, 213);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(278, 51);
+            this.backBtn.TabIndex = 13;
+            this.backBtn.Text = "Volver al inicio";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Visible = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
             // wordTextBox
             // 
             this.wordTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.wordTextBox.Enabled = false;
-            this.wordTextBox.Font = new System.Drawing.Font("Source Sans Pro", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wordTextBox.Location = new System.Drawing.Point(583, 365);
             this.wordTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.wordTextBox.Name = "wordTextBox";
-            this.wordTextBox.Size = new System.Drawing.Size(560, 54);
+            this.wordTextBox.Size = new System.Drawing.Size(560, 49);
             this.wordTextBox.TabIndex = 12;
             this.wordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // wordTitleLbl
             // 
             this.wordTitleLbl.AutoSize = true;
-            this.wordTitleLbl.Font = new System.Drawing.Font("Source Sans Pro", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wordTitleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wordTitleLbl.ForeColor = System.Drawing.SystemColors.ControlText;
             this.wordTitleLbl.Location = new System.Drawing.Point(728, 317);
             this.wordTitleLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.wordTitleLbl.Name = "wordTitleLbl";
-            this.wordTitleLbl.Size = new System.Drawing.Size(250, 46);
+            this.wordTitleLbl.Size = new System.Drawing.Size(275, 42);
             this.wordTitleLbl.TabIndex = 11;
             this.wordTitleLbl.Text = "La palabra es...";
             // 
             // remAttemptsLbl
             // 
             this.remAttemptsLbl.AutoSize = true;
-            this.remAttemptsLbl.Font = new System.Drawing.Font("Source Sans Pro", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remAttemptsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remAttemptsLbl.ForeColor = System.Drawing.SystemColors.ControlText;
             this.remAttemptsLbl.Location = new System.Drawing.Point(599, 166);
             this.remAttemptsLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.remAttemptsLbl.Name = "remAttemptsLbl";
-            this.remAttemptsLbl.Size = new System.Drawing.Size(272, 37);
+            this.remAttemptsLbl.Size = new System.Drawing.Size(288, 33);
             this.remAttemptsLbl.TabIndex = 9;
             this.remAttemptsLbl.Text = "Le quedan X intentos";
             // 
             // playerLbl
             // 
             this.playerLbl.AutoSize = true;
-            this.playerLbl.Font = new System.Drawing.Font("Source Sans Pro", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerLbl.ForeColor = System.Drawing.SystemColors.ControlText;
             this.playerLbl.Location = new System.Drawing.Point(599, 105);
             this.playerLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.playerLbl.Name = "playerLbl";
-            this.playerLbl.Size = new System.Drawing.Size(275, 37);
+            this.playerLbl.Size = new System.Drawing.Size(287, 33);
             this.playerLbl.TabIndex = 8;
             this.playerLbl.Text = "Nombre del Jugador:";
-            // 
-            // NyBtn
-            // 
-            this.NyBtn.Font = new System.Drawing.Font("Source Sans Pro", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NyBtn.Location = new System.Drawing.Point(54, 621);
-            this.NyBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.NyBtn.Name = "NyBtn";
-            this.NyBtn.Size = new System.Drawing.Size(90, 64);
-            this.NyBtn.TabIndex = 27;
-            this.NyBtn.Text = "Ñ";
-            this.NyBtn.UseVisualStyleBackColor = true;
-            this.NyBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // deadHeadPicBox
             // 
@@ -579,7 +582,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1328, 699);
-            this.Controls.Add(this.NyBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ZBtn);
             this.Controls.Add(this.YBtn);
@@ -608,6 +610,7 @@
             this.Controls.Add(this.BBtn);
             this.Controls.Add(this.ABtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1344, 738);
@@ -658,7 +661,6 @@
         private System.Windows.Forms.Button YBtn;
         private System.Windows.Forms.Button ZBtn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button NyBtn;
         private System.Windows.Forms.PictureBox polePicBox;
         private System.Windows.Forms.PictureBox headPicBox;
         private System.Windows.Forms.PictureBox arm2PicBox;
@@ -671,5 +673,6 @@
         private System.Windows.Forms.Label remAttemptsLbl;
         private System.Windows.Forms.Label playerLbl;
         private System.Windows.Forms.TextBox wordTextBox;
+        private System.Windows.Forms.Button backBtn;
     }
 }

@@ -19,15 +19,8 @@ namespace hangman
             this.AcceptButton = playBtn;
         }
 
-        private void playBtn_Click(object sender, EventArgs e)
-        {
-            (new GameForm(trimmedPlayerName())).Show();
-            this.Hide();
-        }
-
         private void nameTextBox_TextChanged(object sender, EventArgs e)
         {
-
             playBtn.Enabled = trimmedPlayerName().Length > 0;
         }
 
@@ -36,13 +29,31 @@ namespace hangman
             int i;
             for (i = 0; i < nameTextBox.TextLength && nameTextBox.Text[i] == ' '; i++);
 
-            return nameTextBox.Text.Substring(i);
+            String trimmedName =  nameTextBox.Text.Substring(i);
+            if (trimmedName.Contains(":"))
+            {
+                trimmedName = trimmedName.Replace(":", "");
+            }
+
+            return trimmedName;
+        }
+
+        private void playBtn_Click(object sender, EventArgs e)
+        {
+            (new GameForm(this, trimmedPlayerName())).Show();
+            this.nameTextBox.Clear();
+            this.Hide();
         }
 
         private void highscores_Click(object sender, EventArgs e)
         {
             (new HighscoresForm(this)).Show();
             this.Hide();
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
