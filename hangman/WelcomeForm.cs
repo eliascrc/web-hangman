@@ -13,10 +13,13 @@ namespace hangman
     public partial class WelcomeForm : Form
     {
 
+        private bool playBtnEnabled = false;
+
         public WelcomeForm()
         {
             InitializeComponent();
             this.AcceptButton = playBtn;
+            this.playBtn.FlatAppearance.BorderColor = Color.DimGray;
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)
@@ -54,6 +57,12 @@ namespace hangman
         private void exitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void playBtn_EnabledChanged(object sender, EventArgs e)
+        {
+            this.playBtnEnabled = !this.playBtnEnabled;
+            playBtn.FlatAppearance.BorderColor = this.playBtnEnabled ? Color.FromArgb(239, 164, 47) : Color.DimGray;
         }
     }
 }

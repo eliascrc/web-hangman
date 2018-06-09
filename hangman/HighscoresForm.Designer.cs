@@ -40,10 +40,11 @@
             // titleLbl
             // 
             this.titleLbl.AutoSize = true;
-            this.titleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLbl.Location = new System.Drawing.Point(413, 38);
+            this.titleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.titleLbl.Location = new System.Drawing.Point(316, 32);
             this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(363, 73);
+            this.titleLbl.Size = new System.Drawing.Size(523, 108);
             this.titleLbl.TabIndex = 0;
             this.titleLbl.Text = "Highscores";
             // 
@@ -84,10 +85,14 @@
             // 
             // backBtn
             // 
+            this.backBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.backBtn.FlatAppearance.BorderSize = 3;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backBtn.Location = new System.Drawing.Point(12, 520);
+            this.backBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.backBtn.Location = new System.Drawing.Point(12, 515);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(171, 41);
+            this.backBtn.Size = new System.Drawing.Size(171, 46);
             this.backBtn.TabIndex = 2;
             this.backBtn.Text = "Ir al inicio";
             this.backBtn.UseVisualStyleBackColor = true;
@@ -97,6 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1154, 573);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.highscoreDataGrid);

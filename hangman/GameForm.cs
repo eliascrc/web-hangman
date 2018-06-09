@@ -105,6 +105,14 @@ namespace hangman
             this.Close();
         }
 
+        private void letterBtn_Disabled(object sender, EventArgs e)
+        {
+            if (!((Button)sender).Enabled)
+            {
+                ((Button)sender).FlatAppearance.BorderColor = Color.DimGray;
+            }
+        }
+
         private void GameForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.welcomeForm.Show();

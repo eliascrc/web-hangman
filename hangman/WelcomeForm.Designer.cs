@@ -40,26 +40,32 @@
             // welcomeLbl
             // 
             this.welcomeLbl.AutoSize = true;
-            this.welcomeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLbl.Location = new System.Drawing.Point(237, 168);
+            this.welcomeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.welcomeLbl.Location = new System.Drawing.Point(350, 108);
             this.welcomeLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.welcomeLbl.Name = "welcomeLbl";
-            this.welcomeLbl.Size = new System.Drawing.Size(753, 63);
+            this.welcomeLbl.Size = new System.Drawing.Size(462, 108);
             this.welcomeLbl.TabIndex = 0;
-            this.welcomeLbl.Text = "¡Bienvenido al Ahorcado Web!";
+            this.welcomeLbl.Text = "Ahorcado";
             // 
             // playBtn
             // 
             this.playBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.playBtn.Enabled = false;
+            this.playBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.playBtn.FlatAppearance.BorderSize = 3;
+            this.playBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
+            this.playBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.playBtn.Location = new System.Drawing.Point(491, 351);
             this.playBtn.Margin = new System.Windows.Forms.Padding(2);
             this.playBtn.Name = "playBtn";
-            this.playBtn.Size = new System.Drawing.Size(171, 54);
+            this.playBtn.Size = new System.Drawing.Size(180, 60);
             this.playBtn.TabIndex = 1;
             this.playBtn.Text = "Jugar";
             this.playBtn.UseVisualStyleBackColor = false;
+            this.playBtn.EnabledChanged += new System.EventHandler(this.playBtn_EnabledChanged);
             this.playBtn.Click += new System.EventHandler(this.playBtn_Click);
             // 
             // nameTextBox
@@ -87,11 +93,15 @@
             // highscoresBtn
             // 
             this.highscoresBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.highscoresBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.highscoresBtn.FlatAppearance.BorderSize = 3;
+            this.highscoresBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.highscoresBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.highscoresBtn.Location = new System.Drawing.Point(929, 508);
+            this.highscoresBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.highscoresBtn.Location = new System.Drawing.Point(684, 351);
             this.highscoresBtn.Margin = new System.Windows.Forms.Padding(2);
             this.highscoresBtn.Name = "highscoresBtn";
-            this.highscoresBtn.Size = new System.Drawing.Size(214, 54);
+            this.highscoresBtn.Size = new System.Drawing.Size(214, 60);
             this.highscoresBtn.TabIndex = 4;
             this.highscoresBtn.Text = "Highscores";
             this.highscoresBtn.UseVisualStyleBackColor = false;
@@ -100,11 +110,15 @@
             // exitBtn
             // 
             this.exitBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exitBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.exitBtn.FlatAppearance.BorderSize = 3;
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.exitBtn.Location = new System.Drawing.Point(11, 508);
+            this.exitBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.exitBtn.Location = new System.Drawing.Point(297, 351);
             this.exitBtn.Margin = new System.Windows.Forms.Padding(2);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(156, 54);
+            this.exitBtn.Size = new System.Drawing.Size(180, 60);
             this.exitBtn.TabIndex = 5;
             this.exitBtn.Text = "Salir";
             this.exitBtn.UseVisualStyleBackColor = false;
@@ -114,6 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1154, 573);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.highscoresBtn);

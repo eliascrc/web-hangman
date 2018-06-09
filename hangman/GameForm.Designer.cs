@@ -82,7 +82,11 @@
             // 
             // ABtn
             // 
+            this.ABtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.ABtn.FlatAppearance.BorderSize = 3;
+            this.ABtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ABtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ABtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.ABtn.Location = new System.Drawing.Point(53, 552);
             this.ABtn.Margin = new System.Windows.Forms.Padding(2);
             this.ABtn.Name = "ABtn";
@@ -90,11 +94,16 @@
             this.ABtn.TabIndex = 0;
             this.ABtn.Text = "A";
             this.ABtn.UseVisualStyleBackColor = true;
+            this.ABtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.ABtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // BBtn
             // 
+            this.BBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.BBtn.FlatAppearance.BorderSize = 3;
+            this.BBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.BBtn.Location = new System.Drawing.Point(147, 552);
             this.BBtn.Margin = new System.Windows.Forms.Padding(2);
             this.BBtn.Name = "BBtn";
@@ -102,11 +111,16 @@
             this.BBtn.TabIndex = 1;
             this.BBtn.Text = "B";
             this.BBtn.UseVisualStyleBackColor = true;
+            this.BBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.BBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // CBtn
             // 
+            this.CBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.CBtn.FlatAppearance.BorderSize = 3;
+            this.CBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.CBtn.Location = new System.Drawing.Point(241, 552);
             this.CBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CBtn.Name = "CBtn";
@@ -114,11 +128,16 @@
             this.CBtn.TabIndex = 2;
             this.CBtn.Text = "C";
             this.CBtn.UseVisualStyleBackColor = true;
+            this.CBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.CBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // DBtn
             // 
+            this.DBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.DBtn.FlatAppearance.BorderSize = 3;
+            this.DBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.DBtn.Location = new System.Drawing.Point(335, 552);
             this.DBtn.Margin = new System.Windows.Forms.Padding(2);
             this.DBtn.Name = "DBtn";
@@ -126,11 +145,16 @@
             this.DBtn.TabIndex = 3;
             this.DBtn.Text = "D";
             this.DBtn.UseVisualStyleBackColor = true;
+            this.DBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.DBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // EBtn
             // 
+            this.EBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.EBtn.FlatAppearance.BorderSize = 3;
+            this.EBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.EBtn.Location = new System.Drawing.Point(429, 552);
             this.EBtn.Margin = new System.Windows.Forms.Padding(2);
             this.EBtn.Name = "EBtn";
@@ -138,11 +162,16 @@
             this.EBtn.TabIndex = 4;
             this.EBtn.Text = "E";
             this.EBtn.UseVisualStyleBackColor = true;
+            this.EBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.EBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // FBtn
             // 
+            this.FBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.FBtn.FlatAppearance.BorderSize = 3;
+            this.FBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.FBtn.Location = new System.Drawing.Point(523, 552);
             this.FBtn.Margin = new System.Windows.Forms.Padding(2);
             this.FBtn.Name = "FBtn";
@@ -150,11 +179,16 @@
             this.FBtn.TabIndex = 5;
             this.FBtn.Text = "F";
             this.FBtn.UseVisualStyleBackColor = true;
+            this.FBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.FBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // GBtn
             // 
+            this.GBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.GBtn.FlatAppearance.BorderSize = 3;
+            this.GBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.GBtn.Location = new System.Drawing.Point(617, 552);
             this.GBtn.Margin = new System.Windows.Forms.Padding(2);
             this.GBtn.Name = "GBtn";
@@ -162,11 +196,16 @@
             this.GBtn.TabIndex = 6;
             this.GBtn.Text = "G";
             this.GBtn.UseVisualStyleBackColor = true;
+            this.GBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.GBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // HBtn
             // 
+            this.HBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.HBtn.FlatAppearance.BorderSize = 3;
+            this.HBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.HBtn.Location = new System.Drawing.Point(711, 552);
             this.HBtn.Margin = new System.Windows.Forms.Padding(2);
             this.HBtn.Name = "HBtn";
@@ -174,11 +213,16 @@
             this.HBtn.TabIndex = 7;
             this.HBtn.Text = "H";
             this.HBtn.UseVisualStyleBackColor = true;
+            this.HBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.HBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // IBtn
             // 
+            this.IBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.IBtn.FlatAppearance.BorderSize = 3;
+            this.IBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.IBtn.Location = new System.Drawing.Point(805, 552);
             this.IBtn.Margin = new System.Windows.Forms.Padding(2);
             this.IBtn.Name = "IBtn";
@@ -186,11 +230,16 @@
             this.IBtn.TabIndex = 8;
             this.IBtn.Text = "I";
             this.IBtn.UseVisualStyleBackColor = true;
+            this.IBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.IBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // JBtn
             // 
+            this.JBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.JBtn.FlatAppearance.BorderSize = 3;
+            this.JBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.JBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.JBtn.Location = new System.Drawing.Point(899, 552);
             this.JBtn.Margin = new System.Windows.Forms.Padding(2);
             this.JBtn.Name = "JBtn";
@@ -198,11 +247,16 @@
             this.JBtn.TabIndex = 9;
             this.JBtn.Text = "J";
             this.JBtn.UseVisualStyleBackColor = true;
+            this.JBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.JBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // KBtn
             // 
+            this.KBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.KBtn.FlatAppearance.BorderSize = 3;
+            this.KBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.KBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.KBtn.Location = new System.Drawing.Point(993, 552);
             this.KBtn.Margin = new System.Windows.Forms.Padding(2);
             this.KBtn.Name = "KBtn";
@@ -210,11 +264,16 @@
             this.KBtn.TabIndex = 10;
             this.KBtn.Text = "K";
             this.KBtn.UseVisualStyleBackColor = true;
+            this.KBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.KBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // LBtn
             // 
+            this.LBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.LBtn.FlatAppearance.BorderSize = 3;
+            this.LBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.LBtn.Location = new System.Drawing.Point(1087, 552);
             this.LBtn.Margin = new System.Windows.Forms.Padding(2);
             this.LBtn.Name = "LBtn";
@@ -222,11 +281,16 @@
             this.LBtn.TabIndex = 11;
             this.LBtn.Text = "L";
             this.LBtn.UseVisualStyleBackColor = true;
+            this.LBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.LBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // MBtn
             // 
+            this.MBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.MBtn.FlatAppearance.BorderSize = 3;
+            this.MBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.MBtn.Location = new System.Drawing.Point(1181, 552);
             this.MBtn.Margin = new System.Windows.Forms.Padding(2);
             this.MBtn.Name = "MBtn";
@@ -234,11 +298,16 @@
             this.MBtn.TabIndex = 12;
             this.MBtn.Text = "M";
             this.MBtn.UseVisualStyleBackColor = true;
+            this.MBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.MBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // NBtn
             // 
+            this.NBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.NBtn.FlatAppearance.BorderSize = 3;
+            this.NBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.NBtn.Location = new System.Drawing.Point(53, 620);
             this.NBtn.Margin = new System.Windows.Forms.Padding(2);
             this.NBtn.Name = "NBtn";
@@ -246,11 +315,16 @@
             this.NBtn.TabIndex = 13;
             this.NBtn.Text = "N";
             this.NBtn.UseVisualStyleBackColor = true;
+            this.NBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.NBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // OBtn
             // 
+            this.OBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.OBtn.FlatAppearance.BorderSize = 3;
+            this.OBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.OBtn.Location = new System.Drawing.Point(147, 620);
             this.OBtn.Margin = new System.Windows.Forms.Padding(2);
             this.OBtn.Name = "OBtn";
@@ -258,11 +332,16 @@
             this.OBtn.TabIndex = 14;
             this.OBtn.Text = "O";
             this.OBtn.UseVisualStyleBackColor = true;
+            this.OBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.OBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // PBtn
             // 
+            this.PBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.PBtn.FlatAppearance.BorderSize = 3;
+            this.PBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.PBtn.Location = new System.Drawing.Point(241, 620);
             this.PBtn.Margin = new System.Windows.Forms.Padding(2);
             this.PBtn.Name = "PBtn";
@@ -270,11 +349,16 @@
             this.PBtn.TabIndex = 15;
             this.PBtn.Text = "P";
             this.PBtn.UseVisualStyleBackColor = true;
+            this.PBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.PBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // QBtn
             // 
+            this.QBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.QBtn.FlatAppearance.BorderSize = 3;
+            this.QBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.QBtn.Location = new System.Drawing.Point(335, 620);
             this.QBtn.Margin = new System.Windows.Forms.Padding(2);
             this.QBtn.Name = "QBtn";
@@ -282,11 +366,16 @@
             this.QBtn.TabIndex = 16;
             this.QBtn.Text = "Q";
             this.QBtn.UseVisualStyleBackColor = true;
+            this.QBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.QBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // RBtn
             // 
+            this.RBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.RBtn.FlatAppearance.BorderSize = 3;
+            this.RBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.RBtn.Location = new System.Drawing.Point(429, 620);
             this.RBtn.Margin = new System.Windows.Forms.Padding(2);
             this.RBtn.Name = "RBtn";
@@ -294,11 +383,16 @@
             this.RBtn.TabIndex = 17;
             this.RBtn.Text = "R";
             this.RBtn.UseVisualStyleBackColor = true;
+            this.RBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.RBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // SBtn
             // 
+            this.SBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.SBtn.FlatAppearance.BorderSize = 3;
+            this.SBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.SBtn.Location = new System.Drawing.Point(523, 620);
             this.SBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SBtn.Name = "SBtn";
@@ -306,11 +400,16 @@
             this.SBtn.TabIndex = 18;
             this.SBtn.Text = "S";
             this.SBtn.UseVisualStyleBackColor = true;
+            this.SBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.SBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // TBtn
             // 
+            this.TBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.TBtn.FlatAppearance.BorderSize = 3;
+            this.TBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.TBtn.Location = new System.Drawing.Point(617, 620);
             this.TBtn.Margin = new System.Windows.Forms.Padding(2);
             this.TBtn.Name = "TBtn";
@@ -318,11 +417,16 @@
             this.TBtn.TabIndex = 19;
             this.TBtn.Text = "T";
             this.TBtn.UseVisualStyleBackColor = true;
+            this.TBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.TBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // UBtn
             // 
+            this.UBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.UBtn.FlatAppearance.BorderSize = 3;
+            this.UBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.UBtn.Location = new System.Drawing.Point(711, 620);
             this.UBtn.Margin = new System.Windows.Forms.Padding(2);
             this.UBtn.Name = "UBtn";
@@ -330,11 +434,16 @@
             this.UBtn.TabIndex = 20;
             this.UBtn.Text = "U";
             this.UBtn.UseVisualStyleBackColor = true;
+            this.UBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.UBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // VBtn
             // 
+            this.VBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.VBtn.FlatAppearance.BorderSize = 3;
+            this.VBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.VBtn.Location = new System.Drawing.Point(805, 620);
             this.VBtn.Margin = new System.Windows.Forms.Padding(2);
             this.VBtn.Name = "VBtn";
@@ -342,11 +451,16 @@
             this.VBtn.TabIndex = 21;
             this.VBtn.Text = "V";
             this.VBtn.UseVisualStyleBackColor = true;
+            this.VBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.VBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // WBtn
             // 
+            this.WBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.WBtn.FlatAppearance.BorderSize = 3;
+            this.WBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.WBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.WBtn.Location = new System.Drawing.Point(899, 620);
             this.WBtn.Margin = new System.Windows.Forms.Padding(2);
             this.WBtn.Name = "WBtn";
@@ -354,11 +468,16 @@
             this.WBtn.TabIndex = 22;
             this.WBtn.Text = "W";
             this.WBtn.UseVisualStyleBackColor = true;
+            this.WBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.WBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // XBtn
             // 
+            this.XBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.XBtn.FlatAppearance.BorderSize = 3;
+            this.XBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.XBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.XBtn.Location = new System.Drawing.Point(993, 620);
             this.XBtn.Margin = new System.Windows.Forms.Padding(2);
             this.XBtn.Name = "XBtn";
@@ -366,11 +485,16 @@
             this.XBtn.TabIndex = 23;
             this.XBtn.Text = "X";
             this.XBtn.UseVisualStyleBackColor = true;
+            this.XBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.XBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // YBtn
             // 
+            this.YBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.YBtn.FlatAppearance.BorderSize = 3;
+            this.YBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.YBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.YBtn.Location = new System.Drawing.Point(1087, 620);
             this.YBtn.Margin = new System.Windows.Forms.Padding(2);
             this.YBtn.Name = "YBtn";
@@ -378,11 +502,16 @@
             this.YBtn.TabIndex = 24;
             this.YBtn.Text = "Y";
             this.YBtn.UseVisualStyleBackColor = true;
+            this.YBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.YBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // ZBtn
             // 
+            this.ZBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.ZBtn.FlatAppearance.BorderSize = 3;
+            this.ZBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ZBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.ZBtn.Location = new System.Drawing.Point(1181, 620);
             this.ZBtn.Margin = new System.Windows.Forms.Padding(2);
             this.ZBtn.Name = "ZBtn";
@@ -390,6 +519,7 @@
             this.ZBtn.TabIndex = 25;
             this.ZBtn.Text = "Z";
             this.ZBtn.UseVisualStyleBackColor = true;
+            this.ZBtn.EnabledChanged += new System.EventHandler(this.letterBtn_Disabled);
             this.ZBtn.Click += new System.EventHandler(this.LetterButton_Click);
             // 
             // panel1
@@ -417,7 +547,11 @@
             // backBtn
             // 
             this.backBtn.Enabled = false;
+            this.backBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
+            this.backBtn.FlatAppearance.BorderSize = 3;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.backBtn.Location = new System.Drawing.Point(605, 213);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(278, 51);
@@ -432,6 +566,7 @@
             this.wordTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.wordTextBox.Enabled = false;
             this.wordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
             this.wordTextBox.Location = new System.Drawing.Point(583, 365);
             this.wordTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.wordTextBox.Name = "wordTextBox";
@@ -581,6 +716,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1328, 699);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ZBtn);
