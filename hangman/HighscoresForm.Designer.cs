@@ -80,7 +80,7 @@
             this.highscoreDataGrid.Name = "highscoreDataGrid";
             this.highscoreDataGrid.ReadOnly = true;
             this.highscoreDataGrid.RowHeadersVisible = false;
-            this.highscoreDataGrid.Size = new System.Drawing.Size(1004, 352);
+            this.highscoreDataGrid.Size = new System.Drawing.Size(1004, 387);
             this.highscoreDataGrid.TabIndex = 1;
             // 
             // backBtn
@@ -90,9 +90,9 @@
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(164)))), ((int)(((byte)(47)))));
-            this.backBtn.Location = new System.Drawing.Point(12, 515);
+            this.backBtn.Location = new System.Drawing.Point(12, 548);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(171, 46);
+            this.backBtn.Size = new System.Drawing.Size(195, 58);
             this.backBtn.TabIndex = 2;
             this.backBtn.Text = "Ir al inicio";
             this.backBtn.UseVisualStyleBackColor = true;
@@ -103,14 +103,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1154, 573);
+            this.ClientSize = new System.Drawing.Size(1154, 617);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.highscoreDataGrid);
             this.Controls.Add(this.titleLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1170, 612);
+            this.MaximumSize = new System.Drawing.Size(1170, 656);
+            this.MinimumSize = new System.Drawing.Size(1170, 656);
             this.Name = "HighscoresForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HighscoresForm";
